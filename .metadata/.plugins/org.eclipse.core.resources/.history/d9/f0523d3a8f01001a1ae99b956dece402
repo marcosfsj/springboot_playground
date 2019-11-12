@@ -1,0 +1,18 @@
+package com.training.springdatajpanodto.service;
+
+import java.util.List;
+import java.util.Optional;
+
+import com.training.springdatajpanodto.entity.Instructor;
+
+public interface InstructorService {
+
+	public List<Instructor> getInstructors();
+
+	public void saveInstructor(Instructor instructor);
+
+	public  Optional<Instructor> getInstructor(Long id);
+
+	public void deleteInstructor(Long id);
+	
+}

@@ -1,0 +1,19 @@
+package com.training.springdatajpanodto.rest;
+
+import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.*;
+
+import org.springframework.hateoas.EntityModel;
+import org.springframework.hateoas.ResourceAssembler;
+import org.springframework.stereotype.Component;
+
+@Component
+class ResourceAssembler implements ResourceAssembler<Employee, Resource<Employee>> {
+
+  @Override
+  public Resource<Employee> toResource(Employee employee) {
+
+    return new Resource<>(employee,
+      linkTo(methodOn(EmployeeController.class).one(employee.getId())).withSelfRel(),
+      linkTo(methodOn(EmployeeController.class).all()).withRel("employees"));
+  }
+}

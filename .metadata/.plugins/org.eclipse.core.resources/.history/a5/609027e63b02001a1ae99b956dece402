@@ -1,0 +1,5 @@
+package com.training.springdatajpanodto.rest;
+
+public class ResourceAssembler {
+
+}

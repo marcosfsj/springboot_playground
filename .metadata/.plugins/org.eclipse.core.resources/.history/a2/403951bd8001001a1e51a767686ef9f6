@@ -1,0 +1,5 @@
+package com.training.springdatajpanodto.dao;
+
+public class InstructorDAO {
+
+}

@@ -1,0 +1,11 @@
+package com.training.springdatajpanodto.rest;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+@RestController
+public class InstructorController {
+
+	@Autowired
+	private InstructorService instructorService;
+	
+}

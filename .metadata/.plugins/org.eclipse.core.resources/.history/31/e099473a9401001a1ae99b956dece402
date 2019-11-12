@@ -1,0 +1,56 @@
+package com.training.springdatajpanodto.rest;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.training.springdatajpanodto.entity.Instructor;
+import com.training.springdatajpanodto.service.InstructorService;
+
+@RestController
+@RequestMapping("/api/v1/instructors")
+public class InstructorController {
+
+	@Autowired
+	private InstructorService instructorService;
+
+	@GetMapping
+	List<Instructor> findAll() {
+		return instructorService.findAll();
+	}
+
+	@GetMapping("/{id}")
+	Instructor findById(@PathVariable Long id) {
+		return instructorService.findById(id)
+				.orElseThrow(() -> new NotFoundException("Instructor id not found - " + id));
+	}
+
+	@PostMapping
+	Instructor createInstructor(@RequestBody Instructor instructor) {
+		return instructorService.save(instructor);
+	}
+
+	@PutMapping("/{id}")
+	Instructor update(@RequestBody Instructor newInstructor, @PathVariable Long id) {
+		return instructorService.findById(id).map(instructor -> {
+			instructor.setFirstName(newInstructor.getFirstName());
+			instructor.setLastName(newInstructor.getLastName());
+			instructor.setEmail(newInstructor.getEmail());
+			return instructorService.save(instructor);
+		}).orElseThrow(() -> new NotFoundException("Instructor id not found - " + id));
+	}
+
+	@DeleteMapping("/{id}")
+	void deleteById(@PathVariable Long id) {
+		instructorService.deleteById(id);
+	}
+
+}

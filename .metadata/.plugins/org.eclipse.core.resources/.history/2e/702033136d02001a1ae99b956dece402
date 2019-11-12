@@ -1,0 +1,12 @@
+insert into users(username, password, enabled) values('fulano', 'fulano', true);
+insert into users(username, password, enabled) values('ciclano', 'ciclano', true);
+insert into users(username, password, enabled) values('beltrano', 'beltrano', false);
+ 
+insert into authorities(username, authority) values('fulano', 'ROLE_USER');
+insert into authorities(username, authority) values('ciclano', 'ROLE_USER');
+insert into authorities(username, authority) values('beltrano', 'ROLE_USER');
+insert into authorities(username, authority) values('beltrano', 'ROLE_ADMIN');
+
+insert into instructor(id, first_name, last_name, email) values(1, 'Fulano', 'Caetano', 'fc@gmail.com');
+insert into instructor(id, first_name, last_name, email) values(2, 'Ciclano', 'Pereira', 'cp@gmail.com');
+insert into instructor(id, first_name, last_name, email) values(3, 'Beltrano', 'Normando', 'bn@gmail.com');

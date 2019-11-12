@@ -1,0 +1,7 @@
+package com.training.springdatajpanodto.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.training.springdatajpanodto.entity.Instructor;
+
+interface InstructorRepository extends JpaRepository<Instructor, Long> {}
