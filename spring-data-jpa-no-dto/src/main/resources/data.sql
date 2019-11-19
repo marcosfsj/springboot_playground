@@ -1,6 +1,6 @@
-insert into instructor(id, first_name, last_name, email) values(1, 'Fulano', 'Caetano', 'fc@gmail.com');
-insert into instructor(id, first_name, last_name, email) values(2, 'Ciclano', 'Pereira', 'cp@gmail.com');
-insert into instructor(id, first_name, last_name, email) values(3, 'Beltrano', 'Normando', 'bn@gmail.com');
+insert into instructor(id, first_name, last_name, email, age) values(1, 'Fulano', 'Caetano', 'fc@gmail.com', 20);
+insert into instructor(id, first_name, last_name, email, age) values(2, 'Ciclano', 'Pereira', 'cp@gmail.com', 30);
+insert into instructor(id, first_name, last_name, email, age) values(3, 'Beltrano', 'Normando', 'bn@gmail.com', 40);
 
 insert into user(id, user_name, password, enabled) values(1, 'fulano', 'fulano', true);
 insert into user(id, user_name, password, enabled) values(2, 'ciclano', 'ciclano', true);

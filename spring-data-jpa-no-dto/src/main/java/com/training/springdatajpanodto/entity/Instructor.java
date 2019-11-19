@@ -1,8 +1,13 @@
 package com.training.springdatajpanodto.entity;
 
+import java.util.Set;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
 @Entity
 public class Instructor {
@@ -12,13 +17,22 @@ public class Instructor {
 	private String firstName;
 	private String lastName;
 	private String email;
+	private int age;
+	
+	@OneToMany(
+			fetch=FetchType.LAZY,
+			mappedBy="instructorId", 
+			cascade= {CascadeType.PERSIST, CascadeType.MERGE,
+			          CascadeType.DETACH, CascadeType.REFRESH})
+	private Set<Course> courses;
 	
 	public Instructor() {}
 	
-	public Instructor(String firstName, String lastName, String email) {
+	public Instructor(String firstName, String lastName, String email, int age) {
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.email = email;
+		this.age = age;
 	}
 
 	public Long getId() {
@@ -51,6 +65,28 @@ public class Instructor {
 
 	public void setEmail(String email) {
 		this.email = email;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+	
+	public Set<Course> getCourses() {
+		return courses;
+	}
+
+	public void setCourses(Set<Course> courses) {
+		this.courses = courses;
+	}
+
+	@Override
+	public String toString() {
+		return "Instructor [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", email=" + email
+				+ ", age=" + age + "]";
 	}
 	
 }

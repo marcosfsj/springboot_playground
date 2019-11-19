@@ -7,7 +7,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.training.springdatajpanodto.entity.Course;
 import com.training.springdatajpanodto.entity.Instructor;
+import com.training.springdatajpanodto.repository.CourseRepository;
 import com.training.springdatajpanodto.repository.InstructorRepository;
 
 @Service
@@ -16,13 +18,26 @@ public class InstructorServiceImpl implements InstructorService {
 	@Autowired
 	private InstructorRepository instructorRepository;
 	
+	@Autowired
+	private CourseRepository courseRepository;
+	
 	@Transactional
 	public List<Instructor> findAll() {
 		return instructorRepository.findAll();
 	}
+	
+	@Transactional
+	public List<Course> findRelatedCourses(Long id) {
+		return courseRepository.findAllByInstructorId(id);
+	}
 
 	@Transactional
-	public Instructor save(Instructor instructor) {
+	public Instructor create(Instructor instructor) {
+		return instructorRepository.save(instructor);
+	}
+	
+	@Transactional
+	public Instructor update(Instructor instructor) {
 		return instructorRepository.save(instructor);
 	}
 
@@ -35,5 +50,5 @@ public class InstructorServiceImpl implements InstructorService {
 	public void deleteById(Long id) {
 		instructorRepository.deleteById(id);
 	}
-	
+
 }

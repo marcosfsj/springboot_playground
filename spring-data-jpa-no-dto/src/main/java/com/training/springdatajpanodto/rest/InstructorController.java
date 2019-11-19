@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.training.springdatajpanodto.entity.Course;
 import com.training.springdatajpanodto.entity.Instructor;
 import com.training.springdatajpanodto.rest.exception.NotFoundException;
 import com.training.springdatajpanodto.service.InstructorService;
@@ -22,6 +23,7 @@ public class InstructorController {
 
 	@Autowired
 	private InstructorService instructorService;
+	
 
 	@GetMapping
 	List<Instructor> findAll() {
@@ -33,11 +35,16 @@ public class InstructorController {
 		return instructorService.findById(id)
 				.orElseThrow(() -> new NotFoundException("Instructor id not found - " + id));
 	}
+	
+	@GetMapping("/{id}/courses")
+	List<Course> findRelatedCourses(@PathVariable Long id) {
+		return instructorService.findRelatedCourses(id);
+	}
 
 	@PostMapping
 	Instructor create(@RequestBody Instructor instructor) {
 		instructor.setId(null);
-		return instructorService.save(instructor);
+		return instructorService.create(instructor);
 	}
 
 	@PutMapping("/{id}")
@@ -46,7 +53,8 @@ public class InstructorController {
 			instructor.setFirstName(newInstructor.getFirstName());
 			instructor.setLastName(newInstructor.getLastName());
 			instructor.setEmail(newInstructor.getEmail());
-			return instructorService.save(instructor);
+			instructor.setAge(newInstructor.getAge());
+			return instructorService.update(instructor);
 		}).orElseThrow(() -> new NotFoundException("Instructor id not found - " + id));
 	}
 
