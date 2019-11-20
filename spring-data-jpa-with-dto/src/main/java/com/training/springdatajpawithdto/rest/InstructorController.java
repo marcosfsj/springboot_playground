@@ -1,9 +1,11 @@
 package com.training.springdatajpawithdto.rest;
 
+import java.text.ParseException;
 import java.util.List;
 import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -40,6 +42,13 @@ public class InstructorController {
 		return instructors.stream().map(instructor -> instructorMapper.convertToDto(instructor))
 				.collect(Collectors.toList());
 	}
+	
+	@GetMapping("/paginated/{page}/{pageSize}")
+	List<InstructorDto> findAllPaginated(@PathVariable int page, @PathVariable int pageSize) {
+		Page<Instructor> instructors = instructorService.findAllPaginated(page, pageSize);
+		return instructors.stream().map(instructor -> instructorMapper.convertToDto(instructor))
+				.collect(Collectors.toList());
+	}
 
 	@GetMapping("/{id}")
 	InstructorDto findById(@PathVariable Long id) {
@@ -55,9 +64,9 @@ public class InstructorController {
 	}
 
 	@PostMapping
-	InstructorDto create(@RequestBody Instructor instructor) {
-		instructor.setId(null);
-		return instructorMapper.convertToDto(instructorService.create(instructor));
+	InstructorDto create(@RequestBody InstructorDto instructorDto) throws ParseException {
+		instructorDto.setId(null);
+		return instructorMapper.convertToDto(instructorService.create(instructorMapper.convertToEntity(instructorDto)));
 	}
 
 	@PutMapping("/{id}")

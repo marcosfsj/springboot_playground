@@ -20,7 +20,7 @@ public class Instructor {
 	private int age;
 	
 	@OneToMany(
-			fetch=FetchType.LAZY,
+			fetch=FetchType.EAGER,
 			mappedBy="instructorId", 
 			cascade= {CascadeType.PERSIST, CascadeType.MERGE,
 			          CascadeType.DETACH, CascadeType.REFRESH})

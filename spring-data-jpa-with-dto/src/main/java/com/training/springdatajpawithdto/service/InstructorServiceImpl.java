@@ -4,6 +4,8 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -24,6 +26,11 @@ public class InstructorServiceImpl implements InstructorService {
 	@Transactional
 	public List<Instructor> findAll() {
 		return instructorRepository.findAll();
+	}
+	
+	@Transactional
+	public Page<Instructor> findAllPaginated(int page, int pageSize) {
+		return instructorRepository.findAll(PageRequest.of(page, pageSize));
 	}
 	
 	@Transactional

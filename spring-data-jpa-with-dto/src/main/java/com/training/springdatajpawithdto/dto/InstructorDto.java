@@ -1,17 +1,19 @@
 package com.training.springdatajpawithdto.dto;
 
-import java.util.Set;
+import java.util.List;
 
 public class InstructorDto {
+	
+//	private static final SimpleDateFormat dateFormat
+//    = new SimpleDateFormat("yyyy-MM-dd HH:mm");
 	
 	private Long id;
 	private String firstName;
 	private String lastName;
 	private String email;
 	private int age;
-	private Set<CourseDto> courses;
-	
-	
+	private List<CourseDto> courses;
+		
 	public Long getId() {
 		return id;
 	}
@@ -52,12 +54,22 @@ public class InstructorDto {
 		this.age = age;
 	}
 
-	public Set<CourseDto> getCourses() {
+	public List<CourseDto> getCourses() {
 		return courses;
 	}
 
-	public void setCourses(Set<CourseDto> courses) {
+	public void setCourses(List<CourseDto> courses) {
 		this.courses = courses;
 	}
+	
+//	  public Date getSubmissionDateConverted(String timezone) throws ParseException {
+//	        dateFormat.setTimeZone(TimeZone.getTimeZone(timezone));
+//	        return dateFormat.parse(this.date);
+//	    }
+//	 
+//	    public void setSubmissionDate(Date date, String timezone) {
+//	        dateFormat.setTimeZone(TimeZone.getTimeZone(timezone));
+//	        this.date = dateFormat.format(date);
+//	    }
 	
 }

@@ -17,15 +17,15 @@ public class CourseMapper {
 	
 	public CourseDto convertToDto(Course course) {
 		CourseDto courseDto = modelMapper.map(course, CourseDto.class);
-		courseDto.setId(course.getId());
-		courseDto.setTitle(course.getTitle());	
+//		 postDto.setSubmissionDate(post.getSubmissionDate(), 
+//			        userService.getCurrentUser().getPreference().getTimezone());
 		return courseDto;
 	}
 
 	public Course convertToEntity(CourseDto courseDto) throws ParseException {
 		Course course = modelMapper.map(courseDto, Course.class);
-		course.setId(courseDto.getId());
-		course.setTitle(courseDto.getTitle());
+//		post.setSubmissionDate(postDto.getSubmissionDateConverted(
+//			      userService.getCurrentUser().getPreference().getTimezone()));
 		return course;
 	}
 
