@@ -5,7 +5,6 @@ import java.util.Optional;
 
 import org.springframework.data.domain.Page;
 
-import com.training.springdatajpawithdto.entity.Course;
 import com.training.springdatajpawithdto.entity.Instructor;
 
 public interface InstructorService {
@@ -14,8 +13,6 @@ public interface InstructorService {
 	
 	public Page<Instructor> findAllPaginated(int page, int pageSize);
 	
-	public List<Course> findRelatedCourses(Long id);
-
 	public Instructor create(Instructor instructor);
 	
 	public Instructor update(Instructor instructor);

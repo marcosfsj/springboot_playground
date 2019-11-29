@@ -21,14 +21,18 @@ import com.training.springdatajpawithdto.entity.Instructor;
 import com.training.springdatajpawithdto.mapper.CourseMapper;
 import com.training.springdatajpawithdto.mapper.InstructorMapper;
 import com.training.springdatajpawithdto.rest.exception.NotFoundException;
+import com.training.springdatajpawithdto.service.CourseService;
 import com.training.springdatajpawithdto.service.InstructorService;
 
 @RestController
 @RequestMapping("/api/v1/instructors")
-public class InstructorController {
+public class InstructorResource {
 
 	@Autowired
 	private InstructorService instructorService;
+	
+	@Autowired
+	private CourseService courseService;
 
 	@Autowired
 	private InstructorMapper instructorMapper;
@@ -59,7 +63,7 @@ public class InstructorController {
 
 	@GetMapping("/{id}/courses")
 	List<CourseDto> findRelatedCourses(@PathVariable Long id) {
-		return instructorService.findRelatedCourses(id).stream().map(course -> courseMapper.convertToDto(course))
+		return courseService.findAllByInstructorId(id).stream().map(course -> courseMapper.convertToDto(course))
 				.collect(Collectors.toList());
 	}
 

@@ -20,6 +20,11 @@ public class CourseServiceImpl implements CourseService {
 	public List<Course> findAll() {
 		return courseRepository.findAll();
 	}
+	
+	@Transactional
+	public List<Course> findAllByInstructorId(Long instructorId) {
+		return courseRepository.findAllByInstructorId(instructorId);
+	}
 
 	@Transactional
 	public Course create(Course course) {

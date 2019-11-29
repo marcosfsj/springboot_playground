@@ -2088,3 +2088,64 @@ org.eclipse.core.runtime.CoreException: Launch configuration SpringDataJpaRestAp
 2019-11-20 10:31:46,155 [Worker-323: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
 2019-11-20 10:31:46,159 [Worker-323: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
 2019-11-20 10:31:46,161 [Worker-323: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-20 10:31:46,161 [Worker-323: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\marcfernandes\corp\springboot\projects\spring-data-jpa-with-dto\src\test\resources
+2019-11-20 11:34:33,017 [Worker-334: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-20 11:34:33,018 [Worker-334: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-20 11:34:33,022 [Worker-334: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-20 11:34:33,025 [Worker-334: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-20 11:34:33,025 [Worker-334: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\marcfernandes\corp\springboot\projects\spring-data-jpa-with-dto\src\test\resources
+2019-11-20 11:34:59,744 [Worker-333: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-20 11:34:59,745 [Worker-333: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-20 11:34:59,747 [Worker-333: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-20 11:34:59,749 [Worker-333: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-20 11:34:59,749 [Worker-333: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\marcfernandes\corp\springboot\projects\spring-data-jpa-with-dto\src\test\resources
+2019-11-20 11:35:15,280 [Worker-334: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-20 11:35:15,281 [Worker-334: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-20 11:35:15,284 [Worker-334: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-20 11:35:15,286 [Worker-334: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-20 11:35:15,287 [Worker-334: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\marcfernandes\corp\springboot\projects\spring-data-jpa-with-dto\src\test\resources
+2019-11-20 11:35:26,266 [Worker-326: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-20 11:35:26,267 [Worker-326: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-20 11:35:26,269 [Worker-326: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-20 11:35:26,272 [Worker-326: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-20 11:35:26,272 [Worker-326: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\marcfernandes\corp\springboot\projects\spring-data-jpa-with-dto\src\test\resources
+2019-11-20 11:35:41,128 [Worker-326: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-20 11:35:41,129 [Worker-326: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-20 11:35:41,131 [Worker-326: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-20 11:35:41,134 [Worker-326: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-20 11:35:41,134 [Worker-326: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\marcfernandes\corp\springboot\projects\spring-data-jpa-with-dto\src\test\resources
+2019-11-20 11:37:46,891 [Worker-334: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-20 11:37:46,893 [Worker-334: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-20 11:37:46,898 [Worker-334: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-20 11:37:46,901 [Worker-334: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-20 11:37:46,901 [Worker-334: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\marcfernandes\corp\springboot\projects\spring-data-jpa-with-dto\src\test\resources
+2019-11-20 11:41:21,233 [Worker-338: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-20 11:41:21,235 [Worker-338: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-20 11:41:21,266 [Worker-338: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-20 11:41:21,269 [Worker-338: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-20 11:41:21,270 [Worker-338: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\marcfernandes\corp\springboot\projects\spring-data-jpa-with-dto\src\test\resources
+2019-11-20 11:43:11,630 [Worker-335: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-20 11:43:11,632 [Worker-335: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-20 11:43:11,637 [Worker-335: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-20 11:43:11,643 [Worker-335: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-20 11:43:11,643 [Worker-335: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\marcfernandes\corp\springboot\projects\spring-data-jpa-with-dto\src\test\resources
+2019-11-20 11:43:34,922 [Worker-335: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-20 11:43:34,923 [Worker-335: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-20 11:43:34,925 [Worker-335: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-20 11:43:34,927 [Worker-335: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-20 11:43:34,928 [Worker-335: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\marcfernandes\corp\springboot\projects\spring-data-jpa-with-dto\src\test\resources
+2019-11-20 11:43:43,519 [Worker-336: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-20 11:43:43,520 [Worker-336: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-20 11:43:43,523 [Worker-336: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-20 11:43:43,525 [Worker-336: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-20 11:43:43,526 [Worker-336: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\marcfernandes\corp\springboot\projects\spring-data-jpa-with-dto\src\test\resources
+2019-11-27 08:35:12,748 [Worker-1205: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 08:35:12,752 [Worker-1205: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 08:35:12,759 [Worker-1205: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 08:35:12,763 [Worker-1205: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 08:35:12,764 [Worker-1205: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\marcfernandes\corp\springboot\projects\spring-data-jpa-with-dto\src\test\resources
+2019-11-27 08:35:38,559 [Worker-1209: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 08:35:38,560 [Worker-1209: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 08:35:38,562 [Worker-1209: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 08:35:38,565 [Worker-1209: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 08:35:38,565 [Worker-1209: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\marcfernandes\corp\springboot\projects\spring-data-jpa-with-dto\src\test\resources

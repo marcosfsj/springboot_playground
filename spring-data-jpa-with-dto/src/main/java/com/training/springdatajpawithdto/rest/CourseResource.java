@@ -18,7 +18,7 @@ import com.training.springdatajpawithdto.service.CourseService;
 
 @RestController
 @RequestMapping("/api/v1/courses")
-public class CourseController {
+public class CourseResource {
 
 	@Autowired
 	private CourseService courseService;

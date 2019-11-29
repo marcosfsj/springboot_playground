@@ -8,6 +8,8 @@ import com.training.springdatajpawithdto.entity.Course;
 public interface CourseService {
 
 	public List<Course> findAll();
+	
+	public List<Course> findAllByInstructorId(Long instructorId);
 
 	public Course create(Course course);
 	

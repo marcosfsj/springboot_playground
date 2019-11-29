@@ -9,9 +9,7 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.training.springdatajpawithdto.entity.Course;
 import com.training.springdatajpawithdto.entity.Instructor;
-import com.training.springdatajpawithdto.repository.CourseRepository;
 import com.training.springdatajpawithdto.repository.InstructorRepository;
 
 @Service
@@ -19,9 +17,6 @@ public class InstructorServiceImpl implements InstructorService {
 
 	@Autowired
 	private InstructorRepository instructorRepository;
-	
-	@Autowired
-	private CourseRepository courseRepository;
 	
 	@Transactional
 	public List<Instructor> findAll() {
@@ -33,11 +28,6 @@ public class InstructorServiceImpl implements InstructorService {
 		return instructorRepository.findAll(PageRequest.of(page, pageSize));
 	}
 	
-	@Transactional
-	public List<Course> findRelatedCourses(Long id) {
-		return courseRepository.findAllByInstructorId(id);
-	}
-
 	@Transactional
 	public Instructor create(Instructor instructor) {
 		return instructorRepository.save(instructor);
