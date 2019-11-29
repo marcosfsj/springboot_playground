@@ -21,4 +21,6 @@ public interface InstructorService {
 
 	public void deleteById(Long id);
 	
+	public List<Instructor> useFancyFinders(String firstName, String lastName);
+
 }

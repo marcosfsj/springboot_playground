@@ -88,5 +88,12 @@ public class InstructorResource {
 	void deleteById(@PathVariable Long id) {
 		instructorService.deleteById(id);
 	}
+	
+	@GetMapping("/{firstName}/{lastName}")
+	List<InstructorDto> findByFancyFinders(@PathVariable String firstName, @PathVariable String lastName) {
+		List<Instructor> instructors = instructorService.useFancyFinders(firstName, lastName);
+		return instructors.stream().map(instructor -> instructorMapper.convertToDto(instructor))
+				.collect(Collectors.toList());
+	}
 
 }

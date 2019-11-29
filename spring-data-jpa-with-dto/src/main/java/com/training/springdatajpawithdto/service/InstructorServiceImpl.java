@@ -47,5 +47,11 @@ public class InstructorServiceImpl implements InstructorService {
 	public void deleteById(Long id) {
 		instructorRepository.deleteById(id);
 	}
+	
+	@Transactional
+	public List<Instructor> useFancyFinders(String firstName, String lastName) {
+		return instructorRepository.findByFirstNameContaining(firstName)
+				  .and(instructorRepository.findByLastNameContaining(lastName)).toList();	
+	}
 
 }
