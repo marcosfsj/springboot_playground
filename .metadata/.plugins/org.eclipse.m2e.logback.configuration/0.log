@@ -2218,3 +2218,4 @@ org.eclipse.core.runtime.CoreException: Launch configuration SpringDataJpaRestAp
 2019-11-29 16:25:06,014 [Worker-1482: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
 2019-11-29 16:25:06,019 [Worker-1482: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
 2019-11-29 16:25:06,022 [Worker-1482: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-29 16:25:06,022 [Worker-1482: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\marcfernandes\corp\springboot\projects\spring-data-jpa-with-dto\src\test\resources
